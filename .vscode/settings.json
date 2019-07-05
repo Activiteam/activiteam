@@ -1,3 +1,3 @@
 {
-  "autoimport.filesToScan": "{front,back}/**/*.{js,jsx,ts,tsx}"
+  "autoimport.filesToScan": "{front,back}/**/*.{ts,tsx}"
 }

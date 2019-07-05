@@ -1,2 +1,8 @@
 # vscode folder
 .history
+
+# JS specific folders
+node_modules/
+yarn.lock
+package-lock.json
+build/
