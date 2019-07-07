@@ -1,15 +1,23 @@
-version: '3.4'
+version: "3.4"
 
 services:
   backend:
     build: ./back/
     container_name: backend
     ports:
-    - "4003:4003"
+      - "4003:4003"
     depends_on:
-    - mongo-database
+      - mongo-database
   mongo-database:
     image: mongo:4.0.10
     container_name: mongo-database
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-#10D}
     ports:
-        - "27017:27017"
+      - "27017:27017"
+  client:
+    container_name: client
+    build: ./front
+    ports:
+      - "8084:80"

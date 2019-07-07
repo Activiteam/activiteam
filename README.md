@@ -23,7 +23,8 @@ En production nous utiliserons `yarn build` pour tout générer dans un dossier 
 ## ToDo Lucas POUILLE
 - [x] Initialiser Docker back
 - [x] Initialiser Docker mongo
-- [ ] Initialiser Docker front (nginx)
+- [x] Initialiser Docker front (nginx)
+- [x] Base script sh
 - [ ] Script .sh pour faciliter les démarrages de conteneurs
 - [ ] Configuration tslint / prettier sur back et front
 - [ ] Ajout react-router sur la partie front
