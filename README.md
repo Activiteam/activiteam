@@ -26,10 +26,10 @@ En production nous utiliserons `yarn build` pour tout générer dans un dossier 
 - [x] Initialiser Docker front (nginx)
 - [x] Base script sh
 - [ ] Script .sh pour faciliter les démarrages de conteneurs
-- [ ] Configuration tslint / prettier sur back et front
+- [x] Configuration tslint / prettier sur back et front
+- [x] Configuration tests back / front
 - [ ] Ajout react-router sur la partie front
 - [ ] Test communication front - back (e.g. simple appel au backend)
 - [ ] Spécifier le modèle de données (pour la base de données)
-- [ ] Définir des micro-services ? Ou pas apparemment
 - [ ] Identity provider pour les utilisateurs ? Keycloak ? SSO via Google / FB / ... ? Voir Passport.js
 - [ ] Focus full responsive
