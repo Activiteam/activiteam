@@ -20,4 +20,4 @@ services:
     container_name: client
     build: ./front
     ports:
-      - "8084:80"
+      - "8085:8085"
