@@ -1,21 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import MainRouter from './components/MainRouter/MainRouter';
+import { ThemeProvider } from '@material-ui/styles';
+import theme from './Theme';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://google.fr" target="_blank" rel="noopener noreferrer">
-          Learn Reacta
-        </a>
-      </header>
-    </div>
-  );
-};
+class App extends Component<{}, {}> {
+  public render() {
+    return (
+      <ThemeProvider theme={theme}>
+        <MainRouter />
+      </ThemeProvider>
+    );
+  }
+}
 
 export default App;
