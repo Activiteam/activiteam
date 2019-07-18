@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import MainRouter from './components/MainRouter/MainRouter';
+import MainRouter from './routes/MainRouter/MainRouter';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './Theme';
 
